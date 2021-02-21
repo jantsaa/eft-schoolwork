@@ -1,0 +1,107 @@
+body,
+html {
+  height: 100%;
+  font-family: "Cinzel", serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("images/welcomepage.jpg");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation-name: blur;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.bg-text {
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+
+  animation-name: showOptions;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.startBtn {
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.startBtn:hover {
+  text-decoration: none;
+  transition-duration: 0.7s;
+  color: black;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.extracting {
+  animation-name: extract;
+  animation-duration: 4.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  to {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+}
+
+@keyframes extract {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes showOptions {
+  from {
+    opacity: 0;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    right: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-text h1 {
+    font-size: 30px;
+  }
+}

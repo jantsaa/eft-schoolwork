@@ -1,0 +1,142 @@
+body {
+  background-color: #19180a;
+  font-family: "Cinzel", serif;
+}
+
+.welcomeTitle {
+  text-align: center;
+  margin-top: 100px;
+  color: royalblue;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.nav-link {
+  color: #af4319;
+  font-size: 30px;
+  margin: 0px 30px;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.active:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.tarkovTitle {
+  margin-top: 30px;
+}
+
+.tarkovText {
+  border-bottom: 3px solid rgb(73, 69, 69);
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+.tarkovText p {
+  font-size: 300px;
+}
+
+.tarkovText a {
+  font-size: 25px;
+}
+
+.tarkovContent {
+  font-family: "Truculenta", sans-serif;
+  margin-top: 10%;
+  border: 1px solid black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 5px black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.tarkovContent p {
+  margin-top: 2.5rem;
+  font-size: 20px;
+}
+
+.bossesContent {
+  font-family: "Truculenta", sans-serif;
+  margin-top: 10%;
+  border: 1px solid black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 5px black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.bossesContent p {
+  margin-top: 2.5rem;
+  font-size: 20px;
+}
+
+.bossesIntroduction {
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: black;
+  height: 700px;
+  margin-top: 30px;
+}
+
+.card-img-top {
+  height: 300px;
+  max-width: 300px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: red;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: orange;
+  border: 1px solid rebeccapurple;
+}
+
+.cardContainer {
+  display: grid;
+  justify-content: center;
+}
+
+.bossesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .bossesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .bossesContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .bossesContent {
+    padding: 30px 0px;
+  }
+}
